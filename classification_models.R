@@ -462,7 +462,7 @@ classBC5 <- function(mydata) {
 # mydata <- iris
 
 wine.data <- read.csv('Datasets/wine.data.txt', header=FALSE)
-wine.data <- wine.data[,c(seq(2,14),1)]
+wine.data <- wine.data[,c(seq(2,14),1)]  # re-ordering columns
 wine.data$V1 <- as.factor(wine.data$V1)
 mydata <- wine.data
 
